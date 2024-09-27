@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função para exibir</title>
+</head>
+<body>
+    
+    <script>
+
+        // função = bloco de código reutilizável para executar uma tarefa específica de modo centralizado 
+        // (isto é, com mesnos linhas de código)
+
+        var numero = 1 // variável global
+
+        function exibir() { // criando a função
+            alert(numero) // 1
+        } // usar uma variável global dentro desse bloco de código NÃO é legal
+
+
+
+        function exibir() { // criando a função
+            var numero = 1 // essa variável SÓ existe dentro desse bloco
+        }
+
+        alert(numero) // isso dará ERRO
+        // inspecionar + console = mostra o erro
+
+
+        // CONST X VAR X LET
+        let numero = 1 // É a mesma coisa que var, usado para contextos pequenos, dentro de um for, por exemplo. É mais moderno.
+        var numero = 1 // armazena um valor, pode ser global.
+        const NUMERO = 1 // um valor que sempre será o mesmo dentro do código, não pode ser mudado
+    </script>
+
+</body>
+</html>

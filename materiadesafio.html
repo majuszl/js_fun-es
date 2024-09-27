@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função para somar</title>
+</head>
+<body>
+    
+    <script>
+
+        function somarNumerosDaLista() { // criando a função
+            var soma = 0
+            numeros = [10, 20, 30, 40, 50] // criando array
+            for (i in numeros) { //passando por cada item do array
+            var soma = numeros[i] + soma // somando os itens
+            } 
+            alert(soma) //retornando valor
+        }
+
+        // var resultado = somarNumeros(10, 30) //invocando a função
+        // var resultado2 = somarNumeros(50, 2) //reutilizando a função
+        // alert(resultado) //exibindo 40
+
+    </script>
+
+</body>
+</html>
