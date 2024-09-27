@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+</head>
+<body>
+    
+    <!-- 3. Escreva um programa que receba dois números inteiros n1 e n2, sendo estes entre
+    10 e 99. Crie uma função que receba estes dois números e retorne um novo número
+    n3, sendo que o primeiro dígito de n3 deve ser o primeiro dígito de n1 e o segundo
+    de n3 deve ser o último dígito de n2. Imprima n3 fora da função. -->
+
+    <script>
+
+        function criarNovoNumero(n1, n2) { // criando a função
+            var primeiroDig = n1.toString()[0] // transformando n1 em string e ''pegando'' o número da primeira posição
+            var ultimoDig = n2.toString()[1] // transformando n2 em string e ''pegando'' o número da última posição
+            return parseInt(primeiroDig + ultimoDig) //retornando valor
+        }
+
+        var resultado = criarNovoNumero(23, 89) // invocando a função
+        alert(resultado) // exibindo 29
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 13</title>
+</head>
+<body>
+    
+    <!-- 13. Embaralha palavra. Construa uma função que receba uma string como parâmetro
+    e devolva outra string com os carateres embaralhados. Por exemplo: se função
+    receber a palavra calopsita, pode retornar ptasicola ou qualquer outra
+    combinação possível, de forma aleatória. Padronize em sua função que todos os
+    caracteres serão devolvidos em caixa alta ou caixa baixa, independentemente de
+    como foram digitados. -->
+
+    <script>
+
+        function embaralhar(string) { // criando a função
+            var mix = string.toString().split('') // transformando em string / separando os caracteres
+            mix.sort(function(){return 0.5-Math.random()}).join('')
+            return mix // retornando valor
+        }
+
+        var resultado = embaralhar('SENAI') // invocando a função
+        alert(resultado) // exibindo saída formatada
+
+    </script>
+
+</body>
+</html>

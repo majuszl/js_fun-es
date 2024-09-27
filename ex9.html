@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 9</title>
+</head>
+<body>
+
+    <!-- 9. Faça uma função que informe a quantidade de dígitos de um determinado número
+    inteiro informado. -->
+    
+    <script>
+
+
+        var num = prompt('Insira um número inteiro: '); // recebendo o número inteiro
+
+        function contarDigitos(num) { // criando a função com parâmetro num
+            var quant = num.toString().length // transformando em string e contando caracteres/dígitos
+            alert('A quantidade de dígitos presentes no número inserido é de: ' + quant) // exibindo quantidade de dígitos
+        }
+
+        contarDigitos(num) // invocando a função
+
+    </script>
+
+</body>
+</html>

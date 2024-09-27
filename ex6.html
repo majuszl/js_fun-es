@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 6</title>
+</head>
+<body>
+
+    <!-- // 6. Construa uma função sem retorno, que recebe a quantidade dias restantes no ano
+    // e imprime uma mensagem. A mensagem varia de acordo com a quantidade de
+    // dias restante, veja as condições:
+    // a) Restam mais de 30 dias, imprima: “Ainda falta muito para o natal.”
+
+    // b) Restam menos de 30 dias, imprima: “Oba, quase ferias!”
+    // Neste exercício apenas a leitura dos dados é feita na pagina, a impressão fica sob
+    // responsabilidade da função. -->
+    
+    <script>
+
+        function contarDiasDoAno(dias) { // criando a função
+            if (dias > 30) { // aplicando condição
+            var result = 'Ainda falta muito para o Natal!' // armazenando string na variável
+            } 
+            else if (dias <= 30) { // aplicando condição
+            var result = 'Oba! Quase férias! (;' // armazenando string na variável
+            }
+
+            alert(result) // exibindo o resultado
+        }
+
+    var dias = parseInt(prompt('Insira quantos dias faltam para o fim do ano: ')); // recebendo quantidade de dias faltantes
+    contarDiasDoAno(dias) // invocando a função
+
+    </script>
+
+</body>
+</html>

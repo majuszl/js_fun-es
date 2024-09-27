@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5</title>
+</head>
+<body>
+    
+    <!-- 5. Faça um programa contendo uma função que receba dois valores numéricos e um
+    símbolo. Este símbolo representará a operação que se deseja efetuar com os
+    números. Se o símbolo for + deverá ser realizada uma adição, se for - uma
+    subtração, se for / uma divisão e se for * será efetuada uma multiplicação. O
+    resultado deverá ser mostrado no programa principal. -->
+
+    <script>
+
+    var num1 = parseInt(prompt('Insira um número: ')); // recebendo nota
+    var num2 = parseInt(prompt('Insira outro número: ')); // recebendo nota
+    var simb = prompt('Qual operação deseja realizar? (+ adição, - subtração, * multiplicação, / divisão) '); // recebendo o tipo da operação
+
+
+    function adicionar(num1, num2) { // criando a função
+        var adi = num1 + num2 // código da operação
+        return adi //retornando valor
+    }
+
+    function subtrair(num1, num2) { // criando a função
+            var sub = num1 - num2 // código da operação
+            return sub //retornando valor
+    }
+    
+    function multiplicar(num1, num2) { // criando a função
+        var mult = num1 * num2 // código da operação
+        return mult //retornando valor
+    }
+
+    function dividir(num1, num2) { // criando a função
+        var div = num1 / num2 // código da operação
+        return div //retornando valor
+    }
+
+    if (simb == '+') { // aplicando condição
+        alert('A adição dos números é igual a: ' + adicionar(num1, num2)) // exibindo a adição
+    } else if (simb == '-') { // aplicando condição
+        alert('A subtração dos números é igual a: ' + subtrair(num1, num2)) // exibindo a subtração
+    } else if (simb == '*') { // aplicando condição
+        alert('A multiplicação dos números é igual a: ' + multiplicar(num1, num2)) // exibindo a multiplicação
+    } else if (simb == '/') { // aplicando condição
+        alert('A divisão dos números é igual a: ' + dividir(num1, num2)) // exibindo a divisão
+    }
+
+    </script>
+
+</body>
+</html>

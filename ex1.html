@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+</head>
+<body>
+    
+    <!-- 1. Crie um programa que leia três números. Para cada número imprima o dobro. Use
+    uma função que receba como parâmetro um número inteiro e devolva o seu dobro.
+    O valor calculado NÃO pode ser impresso na função que calcula. -->
+
+    <script>
+
+        function dobrarNumeros(n1) { // criando a função
+            var dobro = n1 * 2 // código da operação para dobrar o número
+            return dobro //retornando valor
+        }
+
+        var resultado1 = dobrarNumeros(2) //invocando a função
+        var resultado2 = dobrarNumeros(4) //reutilizando a função
+        var resultado3 = dobrarNumeros(8) //reutilizando a função
+        alert('O dobro é de: ' + resultado1) //exibindo saída formatada
+        alert('O dobro é de: ' + resultado2) //exibindo saída formatada
+        alert('O dobro é de: ' + resultado3) //exibindo saída formatada
+
+
+    </script>
+
+</body>
+</html>

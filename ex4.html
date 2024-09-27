@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+</head>
+<body>
+    
+    <!-- 4. Elabore um programa contendo uma função que receba três notas de um aluno
+    como parâmetros e uma letra. Se a letra for A, a função deverá calcular a média
+    aritmética das notas do aluno; se for P, deverá calcular a média ponderada, com
+    pesos 5, 3 e 2. A média calculada deverá ser devolvida ao programa principal para
+    então ser impressa na tela. -->
+
+    <script>
+
+    var nota1 = parseInt(prompt('A primeira nota do aluno: ')); // recebendo nota
+    var nota2 = parseInt(prompt('A segunda nota do aluno: ')); // recebendo nota
+    var nota3 = parseInt(prompt('A terceira nota do aluno: ')); // recebendo nota
+    var operacao = prompt('Digite A para descobrir a média aritmética, ou P para descobrir a média ponderada: '); // recebendo o tipo da operação
+
+
+    function calcularMediaAritmetica(nota1, nota2, nota3) { // criando a função
+        var media = (nota1 + nota2 + nota3) / 3 // código da operação
+        return media //retornando valor
+    }
+
+    function calcularMediaPonderada(nota1, nota2, nota3) { // criando a função
+            var mult = (nota1 * 5) + (nota2 * 3) + (nota3 *2) // código da operação
+            var mediap = mult / 10 // aplcando a média ponderada, 10 = soma dos pesos
+            return mediap //retornando valor
+        }
+
+    if (operacao == 'A') { // aplicando condição
+        alert('A média aritmética é igual a: ' + calcularMediaAritmetica(nota1, nota2, nota3)) // exibindo média aritmética
+    } else if (operacao == 'P') { // aplicando condição
+        alert('A média ponderada é igual a: ' + calcularMediaPonderada(nota1, nota2, nota3)) // exibindo média ponderada
+    }
+
+    </script>
+
+</body>
+</html>
